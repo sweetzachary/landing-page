@@ -1,4 +1,9 @@
 /*fonts and colors*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto";
+}
 .upper, .footer {
     background-color: #1f2937;
 }
@@ -12,7 +17,7 @@ a {
     text-decoration: none;
 }
 
-.hero p, li {
+.hero p, li, a {
     font-size: 18px;
     color: #e5e7eb
 }
@@ -20,6 +25,7 @@ a {
 .header .logo {
     font-size: 24px;
     color: #f9faf8;
+    font-weight: 900;
 }
 
 button {
@@ -40,4 +46,67 @@ h2 {
     font-size: 36px;
     font-weight: light;
     font-style: italic;
+}
+
+/*let's flex*/
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+/*let's start with the top thingie*/
+h1,p,button {
+    margin: 0px;
+}
+.upper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 6cm;
+    padding-right:6cm;
+    padding-bottom: 3cm;
+    gap: 1cm;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    padding-top:16px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.hero {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+.hero img {
+    width:500px;
+    height: auto;
+}
+.hero .text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.hero button {
+    border:none;
+    padding: 5px;
+    align-self:flex-start;
+    width: 1in;
+    height: 28px;
+    border-radius: 5px;
 }
