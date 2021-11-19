@@ -17,7 +17,7 @@ a {
     text-decoration: none;
 }
 
-.hero p, li, a {
+.hero p, li, a, .submessage {
     font-size: 18px;
     color: #e5e7eb
 }
@@ -163,4 +163,35 @@ q {
     font-weight: bold;
     font-size: 18px;
     font-style: normal;
+}
+
+/*call to action section*/
+
+.action {
+    padding: 1in 2in;
+}
+
+.call {
+    background-color: #3882f6;
+    border-radius:10px;
+    padding: 0.5in 1in;
+
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.call button {
+    align-self:center;
+    border-style: solid;
+    border-color:white;
+    padding: 6px 24px;
+    border-radius:6px
+}
+
+.call .message {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
 }
