@@ -17,7 +17,7 @@ a {
     text-decoration: none;
 }
 
-.hero p, li, a, .submessage {
+.hero p, li, a, .submessage, .footer {
     font-size: 18px;
     color: #e5e7eb
 }
@@ -194,4 +194,12 @@ q {
     font-size: 25px;
     font-weight: bold;
     color: white;
+}
+
+/*footer section*/
+
+.footer {
+    display:flex;
+    padding:1cm;
+    justify-content:center;
 }
