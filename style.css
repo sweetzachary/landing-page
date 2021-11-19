@@ -88,6 +88,7 @@ ul {
     direction: row;
     justify-content: space-between;
     gap: 15px;
+    align-items:center;
 }
 
 
@@ -109,4 +110,57 @@ ul {
     width: 1in;
     height: 28px;
     border-radius: 5px;
+}
+
+/*info section*/
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    gap: 36px;
+}
+
+.pics {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+.pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 206px;
+    text-align: center;
+    gap: 10px;
+}
+.pic img {
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+}
+h2 {
+    margin: 0px;
+}
+
+
+/*quote section*/
+q {
+    quotes: none;
+}
+.quote {
+    display: flex;
+    padding: 1in 3in;
+    flex-direction: column;
+}
+.quote p {
+    align-self:flex-end;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: normal;
 }
